@@ -4,14 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Semantic html5</title>
+        <link href="css/semantic.css" rel="stylesheet">
     </head>
     <body>
+
         <!-- the main heading - only one use of h1 per page-->
         <header>
             <h1>Proper use of html5 semantic markup</h1>
         </header>
+
         <!--main navigation links to relative internal links only-->
         <nav>
+            <h2 class="sr-only">Main navigation</h2>
             <ul>
                 <li><a href="#">LINK 1</a></li>
                 <li><a href="#">LINK 2</a></li>
@@ -21,11 +25,13 @@
 
         <!--main content of the page-->
         <main>
+
             <!--grouping content together-->
             <section id="latin-dummy">
                 <h2>latin "dummy" text</h2>
                 <p>Yeah no, I dont know any latin and I refuse to look up that nerd language. "Lorum ipsum" whatever doesnt change the fact that we've created inherintly superior languages</p>
                 <p>Ok, that sound a bit mean, I just hate Latin to a weird extent</p>
+
                 <!--informational image-->
                 <figure>
                     <img src="html://placehold.it/300x300" alt="idk">
