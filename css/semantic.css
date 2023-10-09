@@ -29,7 +29,11 @@ h3 {
 }
 
 li {
-  font-size: 1.2em;
+  font-size: .9em;
+}
+
+figcaption {
+  font-size: .9em;
 }
 
 sr-only {
