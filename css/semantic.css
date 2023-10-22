@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;700&family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
   background-color:#F5FFDF;
@@ -32,6 +33,10 @@ li {
   font-size: 1em;
 }
 
+a {
+  color:#153063;
+}
+
 summary {
   font-weight: 700;
   font-size: 1.2em;
@@ -52,6 +57,16 @@ figcaption {
 
 caption {
   font-size: 1.2em
+}
+
+.wrap-image{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.button-link{
+  text-decoration: none;
 }
 
 sr-only {
@@ -81,6 +96,30 @@ abbr {
   text-decoration-style: dotted;
 }
 
+table, th, td {
+    border-collapse: collapse;
+}
+table {
+    margin-bottom: 30px;
+}
+td, th {
+    border: 2px solid #153063;
+    width: 200px;
+    text-align: center;
+}
+
+href
+
+/* image wrap */
+
+.wrap-image{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Skip nav */
+
 .skip-link{
   background: black;
   color: white;
@@ -96,19 +135,6 @@ abbr {
 
 .skip-link {
   transition: transform 1s;
-}
-
-
-table, th, td {
-    border-collapse: collapse;
-}
-table {
-    margin-bottom: 30px;
-}
-td {
-    border: 2px solid red;
-    width: 200px;
-    text-align: center;
 }
 
 /* style for forms */
