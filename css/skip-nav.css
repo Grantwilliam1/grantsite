@@ -18,5 +18,5 @@ body {
 }
 
 .skip-link {
-    transition: transform 1.3s;
+    transition: transform .7s;
 }
