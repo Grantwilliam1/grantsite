@@ -13,6 +13,12 @@ body {
   margin: 0 auto;
 }
 
+.banner {
+  background-color:#A5A0B0;
+  text-align: right;
+
+}
+
 h1, h2, h3, caption {
   font-family: 'Lora', serif;
 }
