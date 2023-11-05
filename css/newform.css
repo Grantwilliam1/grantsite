@@ -46,6 +46,7 @@ strong {
 
 h1, h2, h3 {
     padding: .2em 0;
+    text-align: center;
 }
 
 p {
@@ -61,6 +62,18 @@ header, nav, main, aside, footer {
 header, footer, aside {
     text-align: center;
 }
+
+/* aside info */
+
+aside p {
+    margin: 1em;
+}
+
+aside img {
+    margin: .5em;
+}
+
+/* layout */
 
 .container {
     max-width: 1200px;
