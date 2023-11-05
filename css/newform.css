@@ -70,7 +70,17 @@ aside p {
 }
 
 aside img {
-    margin: .5em;
+    margin-top: .5em;
+}
+
+/* #aside1 img {
+    margin-bottom: .5em;
+    border-bottom: 1px solid #153063;
+} */
+
+aside h3 {
+    margin-top: .5em;
+    border-top: 2px solid #153063;
 }
 
 /* layout */
