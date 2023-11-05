@@ -1,3 +1,157 @@
-body {
-    background: #F5FFDF; 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;700&family=Lora:wght@700&display=swap');
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    background-color:#F5FFDF;
+    color:#153063;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, caption {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+  
+h2 {
+    font-size: 1.5em;
+}
+  
+h3 {
+font-size: 1.2em;
+}
+
+li {
+font-size: 1em;
+}
+
+a {
+color:#153063;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    padding: .2em 0;
+}
+
+p {
+    margin: 1.8em 0;
+    line-height: 1.8em;
+}
+
+header, nav, main, aside, footer {
+    padding: 1.5em;
+    border: 1px black solid;
+}
+
+header, footer, aside {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 
+    1fr 2fr 1fr;
+    grid-template-areas: 
+    "header1  header1   header1"
+    "nav1  nav1   nav1"
+    "aside1  main1   aside2"
+    "aside1  main1   aside2"
+    "aside1  main1   aside2"
+    "foot1  foot1   foot1";
+}
+
+header {grid-area: header1;}
+nav {grid-area: nav1;}
+main {grid-area: main1;}
+#aside1 {grid-area: aside1;}
+#aside2 {grid-area: aside2;}
+footer {grid-area: foot1;}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+/* media query for tablet */
+@media screen
+    and (min-width: 641px)
+    and (max-width: 900px) {
+    .container {
+        grid-template-columns:
+            1fr 1fr;
+        grid-template-areas:
+            "header1 header1"
+            "nav1   nav1"
+            "main1  main1"
+            "aside1 aside2"
+            "foot1 foot1";
+    }
+}
+
+/* media query for phones*/
+@media screen
+    and (max-width: 640px) {
+    .container {
+        grid-template-columns:
+            1fr;
+        grid-template-areas:
+            "header1"
+            "nav1"
+            "main1"
+            "aside1"
+            "aside2"
+            "foot1";
+    }
+    nav ul {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    nav ul li a {
+        display: block;
+        padding: 10px 5px;
+        margin: 5px;
+        border: 1px black solid;   
+        background: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
