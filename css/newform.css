@@ -16,6 +16,15 @@ body {
     font-size: 18px;
 }
 
+#hidden-title {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
 h1, h2, h3, caption {
     font-family: 'Lora', serif;
 }
@@ -26,6 +35,10 @@ h1 {
   
 h2 {
     font-size: 1.5em;
+}
+
+nav h2{
+    color: white;
 }
   
 h3 {
