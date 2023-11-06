@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color:#F5FFDF;
+    background-color:#ffebc2;
     color:#153063;
     font-family: 'AR One Sans', sans-serif;
     font-size: 18px;
@@ -47,6 +47,10 @@ strong {
 h1, h2, h3 {
     padding: .2em 0;
     text-align: center;
+}
+
+h3 {
+    padding-top: .7em;
 }
 
 p {
@@ -102,12 +106,12 @@ aside h3 {
     "foot1  foot1   foot1";
 }
 
-header {grid-area: header1;}
-nav {grid-area: nav1;}
-main {grid-area: main1;}
-#aside1 {grid-area: aside1;}
-#aside2 {grid-area: aside2;}
-footer {grid-area: foot1;}
+header {grid-area: header1; background-color: #fff4df}
+nav {grid-area: nav1; background: #410b13;}
+main {grid-area: main1; background-color: #fff4df}
+#aside1 {grid-area: aside1; background: #EDC3BF}
+#aside2 {grid-area: aside2; background: #EDC3BF}
+footer {grid-area: foot1; background: #8C5F66}
 
 nav ul {
     display: flex;
@@ -117,6 +121,14 @@ nav ul {
 
 nav ul li {
     list-style: none;
+}
+
+nav ul a {
+    color: white;
+}
+
+footer small, footer a {
+    color: white;
 }
 
 /* media query for tablet */
@@ -161,6 +173,25 @@ nav ul li {
         background: white;
     }
 }
+
+/* skip nav */
+
+.skip-link{
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(-100%);
+  }
+  
+  .skip-link {
+    transition: transform 1s;
+  }
 
 
 
