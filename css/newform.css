@@ -77,14 +77,29 @@ aside img {
     margin-top: .5em;
 }
 
-/* #aside1 img {
-    margin-bottom: .5em;
-    border-bottom: 1px solid #153063;
-} */
-
 aside h3 {
     margin-top: .5em;
     border-top: 2px solid #153063;
+}
+
+/* nav stuff */
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    color: white;
+}
+
+footer small, footer a {
+    color: white;
 }
 
 /* layout */
@@ -106,34 +121,34 @@ aside h3 {
     "foot1  foot1   foot1";
 }
 
-header {grid-area: header1; background-color: #fff4df}
-nav {grid-area: nav1; background: #410b13;}
-main {grid-area: main1; background-color: #fff4df}
-#aside1 {grid-area: aside1; background: #EDC3BF}
-#aside2 {grid-area: aside2; background: #EDC3BF}
-footer {grid-area: foot1; background: #8C5F66}
-
-nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+header {
+    grid-area: header1;
+    background-color: #fff4df
+}
+nav {
+    grid-area: nav1;
+    background: #410b13;
+}
+main {
+    grid-area: main1;
+    background-color: #fff4df
+}
+#aside1 {
+    grid-area: aside1;
+    background: #EDC3BF
+}
+#aside2 {
+    grid-area: aside2;
+    background: #EDC3BF
+}
+footer {
+    grid-area: foot1;
+    background: #8C5F66
 }
 
-nav ul li {
-    list-style: none;
-}
-
-nav ul a {
-    color: white;
-}
-
-footer small, footer a {
-    color: white;
-}
-
-/* media query for tablet */
+/* for tablets */
 @media screen
-    and (min-width: 641px)
+    and (min-width: 601px)
     and (max-width: 900px) {
     .container {
         grid-template-columns:
@@ -147,9 +162,9 @@ footer small, footer a {
     }
 }
 
-/* media query for phones*/
+/* for phonesphones*/
 @media screen
-    and (max-width: 640px) {
+    and (max-width: 600px) {
     .container {
         grid-template-columns:
             1fr;
