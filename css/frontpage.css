@@ -40,15 +40,15 @@ h2 {
 nav h2{
     color: white;
 }
-  
-h3 {
-font-size: 1.2em;
-}
 
+h3 {
+    font-size: 1.2em;
+}
+    
 li {
 font-size: 1em;
 }
-
+    
 a {
 color:#153063;
 }
@@ -71,7 +71,7 @@ p {
     line-height: 1.8em;
 }
 
-header, nav, main, aside, footer {
+header, nav, main, footer {
     padding: 1.5em;
     border: 1px black solid;
 }
@@ -80,19 +80,8 @@ header, footer, aside {
     text-align: center;
 }
 
-/* aside info */
-
-aside p {
-    margin: 1em;
-}
-
-aside img {
-    margin-top: .5em;
-}
-
-aside h3 {
-    margin-top: .5em;
-    border-top: 2px solid #153063;
+footer small, footer a {
+    color: white;
 }
 
 /* nav stuff */
@@ -109,10 +98,7 @@ nav ul li {
 
 nav ul a {
     color: white;
-}
-
-footer small, footer a {
-    color: white;
+    text-decoration: none;
 }
 
 /* layout */
@@ -122,16 +108,14 @@ footer small, footer a {
     margin: 0 auto;
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     grid-template-columns: 
-    1fr 3fr 1fr;
+    5fr;
     grid-template-areas: 
-    "header1  header1   header1"
-    "nav1  nav1   nav1"
-    "aside1  main1   aside2"
-    "aside1  main1   aside2"
-    "aside1  main1   aside2"
-    "foot1  foot1   foot1";
+    "header1"
+    "nav1"
+    "main1"
+    "foot1";
 }
 
 header {
@@ -165,13 +149,12 @@ footer {
     and (max-width: 900px) {
     .container {
         grid-template-columns:
-            1fr 1fr;
+            3fr;
         grid-template-areas:
-            "header1 header1"
-            "nav1   nav1"
-            "main1  main1"
-            "aside1 aside2"
-            "foot1 foot1";
+            "header1"
+            "nav1"
+            "main1"
+            "foot1";
     }
 }
 
@@ -201,6 +184,12 @@ footer {
         background: white;
         color:#153063;
     }
+}
+
+.wrap-image{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 sr-only {
@@ -234,20 +223,3 @@ sr-only {
   .skip-link {
     transition: transform 1s;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
