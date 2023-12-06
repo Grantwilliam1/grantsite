@@ -135,6 +135,40 @@ footer small, footer a {
     "foot1   foot1";
 }
 
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 
+    3fr 7fr;
+    grid-template-areas: 
+    "header1  header1"
+    "nav1  nav1"
+    "aside1   main1"
+    "aside1   main1"
+    "aside1   main1"
+    "foot1   foot1";
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 
+    1fr;
+    grid-template-areas: 
+    "header1"
+    "nav1"
+    "main1"
+    "main1"
+    "aside1"
+    "foot1";
+}
+
 header {
     grid-area: header1;
     background-color: #fff4df

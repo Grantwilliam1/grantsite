@@ -83,6 +83,10 @@ sr-only {
   
 }
 
+.TOC a:hover {
+	color: white;
+}
+
 nav ul li {
   list-style: none;
 }
