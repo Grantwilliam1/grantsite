@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color:#ffebc2;
+    background-color:#A592B5;
     color:#153063;
     font-family: 'AR One Sans', sans-serif;
     font-size: 18px;
@@ -171,27 +171,23 @@ footer small, footer a {
 
 header {
     grid-area: header1;
-    background-color: #fff4df
+    background-color: #CFBAE1
 }
 nav {
     grid-area: nav1;
-    background: #410b13;
+    background: #5F506B;
 }
 main {
     grid-area: main1;
-    background-color: #fff4df
+    background-color: #CFBAE1
 }
 #aside1 {
     grid-area: aside1;
-    background: #EDC3BF
-}
-#aside2 {
-    grid-area: aside2;
-    background: #EDC3BF
+    background: #C39CE4
 }
 footer {
     grid-area: foot1;
-    background: #8C5F66
+    background: #6E5B8C
 }
 
 /* for tablets */
