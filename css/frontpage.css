@@ -16,6 +16,12 @@ body {
     font-size: 18px;
 }
 
+nav, main, aside, footer {
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
 .container{
     background-color: #ffebc2;
 }
@@ -34,7 +40,7 @@ h1, h2, h3, caption {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
   
 h2 {
@@ -75,11 +81,16 @@ p {
     line-height: 1.8em;
 }
 
+a:hover {
+    background-color: #ffebc2;
+    color: #153063;
+}
+
 header {
     padding: 1.5em;
 }
 
-nav, main, footer {
+nav, main, aside, footer {
     padding: 1.5em;
     border: 1px black solid;
 }
@@ -224,6 +235,16 @@ footer {
         border: 1px black solid;   
         background: white;
         color:#153063;
+    }
+    nav ul li a {
+        display: block;
+        padding: 10px 5px;
+        margin: 5px;
+        background: #fff4df;
+        color:#153063;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        margin: 10px;
     }
     table.responsive-table td {
         display: block;
