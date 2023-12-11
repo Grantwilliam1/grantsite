@@ -10,10 +10,16 @@
 }
 
 body {
-    background-color:#F1E0FF;
+    background-color: white;
     color:#153063;
     font-family: 'AR One Sans', sans-serif;
     font-size: 18px;
+}
+
+nav, main, aside, footer {
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
 #hidden-title {
@@ -56,6 +62,11 @@ a {
 color:#153063;
 }
 
+figcaption{
+    font-size: .8em;
+    padding: none;
+}
+
 strong {
     font-weight: 700;
 }
@@ -74,8 +85,12 @@ p {
     line-height: 1.8em;
 }
 
-header, nav, main, aside, footer {
+header, main, aside, footer {
     padding: 1.5em;
+    
+}
+
+nav {
     border: 1px black solid;
 }
 
@@ -85,14 +100,9 @@ aside p {
     margin: 1em;
 }
 
-aside img {
-    margin-top: .5em;
-}
-
 aside h3 {
-    margin-top: 1em;
-    border-top: 2px solid #153063;
-    text-align: left;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #153063;
 }
 
 /* nav stuff */
@@ -116,10 +126,32 @@ footer small, footer a {
     color: white;
 }
 
+img {
+    height: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.wrap-image{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.wrap-image-two{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
 /* layout */
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     width: 100vw;
@@ -130,13 +162,13 @@ footer small, footer a {
     "header1  header1"
     "nav1  nav1"
     "main1   aside1"
-    "aside2   aside1"
-    "aside2   aside1"
+    "main1   aside1"
+    "aside2   aside2"
     "foot1   foot1";
 }
 
 .container2 {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     width: 100vw;
@@ -153,7 +185,7 @@ footer small, footer a {
 }
 
 .container3 {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     width: 100vw;
@@ -171,25 +203,29 @@ footer small, footer a {
 
 header {
     grid-area: header1;
-    background-color: #CFBAE1;
+    background-color: white;
     text-align: center;
 }
 nav {
     grid-area: nav1;
-    background: #5F506B;
+    background: #6E5B8C;
 }
 main {
     grid-area: main1;
-    background-color: #CFBAE1;
+    background-color: white;
 }
+
 #aside2 {
     grid-area: aside2;
     background-color: #CFBAE1;
+    border: black solid
 }
 #aside1 {
     grid-area: aside1;
     background: #F1E0FF;
     text-align: center;
+    border: 1px black solid;
+    border-bottom: none;
 }
 footer {
     grid-area: foot1;
@@ -257,4 +293,8 @@ footer {
   
   .skip-link {
     transition: transform 1s;
+  }
+
+  footer p{
+    padding: none;
   }
