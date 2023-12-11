@@ -130,6 +130,7 @@ img {
     height: auto;
     padding: 1em;
     text-align: center;
+    max-width:100%
 }
 
 figcaption {
@@ -159,12 +160,12 @@ figcaption {
     grid-template-columns: 
     7fr 3fr;
     grid-template-areas: 
-    "header1  header1"
-    "nav1  nav1"
-    "main1   aside1"
-    "main1   aside1"
+    "head  head"
+    "navi  navi"
+    "main   aside1"
+    "main   aside1"
     "aside2   aside2"
-    "foot1   foot1";
+    "footsy   footsy";
 }
 
 .container2 {
@@ -176,12 +177,12 @@ figcaption {
     grid-template-columns: 
     3fr 7fr;
     grid-template-areas: 
-    "header1  header1"
-    "nav1  nav1"
-    "aside1   main1"
-    "aside1   main2"
-    "aside1   main2"
-    "foot1   foot1";
+    "head  head"
+    "navi  navi"
+    "aside1   main"
+    "aside1   main"
+    "aside1   main"
+    "footsy   footsy";
 }
 
 .container3 {
@@ -193,28 +194,26 @@ figcaption {
     grid-template-columns: 
     1fr;
     grid-template-areas: 
-    "header1"
-    "nav1"
-    "main1"
-    "main2"
+    "head"
+    "navi"
+    "main"
     "aside1"
-    "foot1";
+    "footsy";
 }
 
 header {
-    grid-area: header1;
+    grid-area: head;
     background-color: white;
     text-align: center;
 }
 nav {
-    grid-area: nav1;
+    grid-area: navi;
     background: #6E5B8C;
 }
 main {
-    grid-area: main1;
+    grid-area: main;
     background-color: white;
 }
-
 #aside2 {
     grid-area: aside2;
     background-color: #CFBAE1;
@@ -228,7 +227,7 @@ main {
     border-bottom: none;
 }
 footer {
-    grid-area: foot1;
+    grid-area: footsy;
     background: #6E5B8C;
     text-align: center;
 }
@@ -241,11 +240,12 @@ footer {
         grid-template-columns:
             2fr 1fr;
         grid-template-areas:
-            "header1 header1"
-            "nav1   nav1"
-            "main1  main1"
+            "head head"
+            "navi   navi"
+            "main  main"
             "aside1 aside1"
-            "foot1 foot1";
+            "aside2 aside2"
+            "footsy footsy";
     }
 }
 
@@ -256,25 +256,54 @@ footer {
         grid-template-columns:
             1fr;
         grid-template-areas:
-            "header1"
-            "nav1"
-            "main1"
+            "head"
+            "navi"
+            "main"
+            "aside2"
             "aside1"
-            "foot1";
+            "footsy";
+    }
+    .container2 {
+        grid-template-columns:
+            1fr;
+        grid-template-areas:
+            "head"
+            "navi"
+            "main"
+            "aside1"
+            "footsy";
+    }
+    .container3 {
+        grid-template-columns:
+            1fr;
+        grid-template-areas:
+            "head"
+            "navi"
+            "main"
+            "footsy";
     }
     nav ul {
-        flex-flow: column nowrap;
         text-align: center;
+        display: block;
     }
     nav ul li a {
         display: block;
         padding: 10px 5px;
         margin: 5px;
-        border: 1px black solid;   
-        background: white;
+        background: #F1E0FF;
         color:#153063;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        margin: 10px;
     }
+
 }
+
+/* nav, main, aside, footer {
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+} */
 
 /* skip nav */
 
